@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hey....!\n
-Welcome I am Pro Group Manager👀
+Welcome I am Black Shark Group Manager👀
 • I can help you to manage your groups very easily with my special features 🤗\n
 • Add me into your group\n
 • Click on **HELP** to know about my features or Use /help.
@@ -85,20 +85,20 @@ Welcome I am Pro Group Manager👀
 buttons = [
     [
         InlineKeyboardButton(
-            text="✛𝘼𝘿𝘿 𝙏𝙊 𝙔𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋✛", url="t.me/MISS_JASMINE_BOT?startgroup=true"),
+            text="✛𝘼𝘿𝘿 𝙏𝙊 𝙔𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋✛", url="t.me/King_Amda_Bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="☉𝙃𝙀𝙇𝙋 𝙈𝙀𝙉𝙐☉", callback_data="help_back"),
     ],
     [
       InlineKeyboardButton(text="•Aʙᴏᴜᴛ•", callback_data="masha_"),
-      InlineKeyboardButton(text="•Dᴇᴠ•", url="https://t.me/Psycho_Bots"),
+      InlineKeyboardButton(text="•Dᴇᴠ•", url="https://t.me/KingAmda_Bot"),
     ],
     [
         InlineKeyboardButton(
             text="࿇Gɪᴛʜᴜʙ Sᴏᴜʀᴄᴇ࿇", callback_data="source_"),
         InlineKeyboardButton(
-            text="×𝐒𝐔𝐏𝐏𝐎𝐑𝐓×", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="×𝐒𝐔𝐏𝐏𝐎𝐑𝐓×", url="https://t.me/{SUPPORT_CHAT"
         ),
     ],
 ]
@@ -390,7 +390,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="""MY SOURCE CODE IS BELOW\n[GitHub Source](https://github.com/AstroUB/AstroManager) .""",
+            text="""MY SOURCE CODE IS BELOW\n[GitHub Source](https://github.com/King-Amda/KingAmdaBot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
